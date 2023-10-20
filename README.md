@@ -1,8 +1,6 @@
 # COMP416: Computer Networks 
-
-# Client-Server Game Application via TCP Sockets 
-
-# Network Programming Project Report 
+ Client-Server Game Application via TCP Sockets 
+ Network Programming Project Report 
 
 
 I built the program on top of the given practical content handout “EchoServer”. The connection establishment section is exactly the same except the port to be listened to is requested by the user when the program is run instead of being hardcoded.  
