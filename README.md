@@ -5,15 +5,15 @@
 
 I built the program on top of the given practical content handout “EchoServer”. The connection establishment section is exactly the same except the port to be listened to is requested by the user when the program is run instead of being hardcoded.  
 
-I added another reader to read lines from the server terminal, the 'localReader', all input to the server coming from the server program is done through this reader. 
+I added another reader to read lines from the server terminal, the `localReader`, all input to the server coming from the server program is done through this reader. 
 
 The printed messages are exact copies of what was written in the sample output provided in the handout. 
 
-* The 'gameState' boolean is initalised to 'true' and it is set to 'false' at the end of the game to close the while loop and the connection. 
+* The `gameState` boolean is initalised to `true` and it is set to `false` at the end of the game to close the while loop and the connection. 
 
 * The server player’s name is read from the server program terminal with local reader and it is sent to the client through the output stream. 
 
-* Client player’s name is received through the “in” input stream. 
+* Client player’s name is received through the `in` input stream. 
 
 * The random values are generated. 
 
@@ -25,10 +25,10 @@ The printed messages are exact copies of what was written in the sample output p
 
 * Client’s guess is received, formatted and tokenized. 
 
-* The Euclidean distances (The exact distances aren’t necessary as the smaller number will also have a smaller square root.) are compared and the appropriate 'result' is transmitted to the client. 
+* The Euclidean distances (The exact distances aren’t necessary as the smaller number will also have a smaller square root.) are compared and the appropriate `result` is transmitted to the client. 
 
-* The 'result' is a 2-digit number used to transmit round info. The tens represent the current round and the ones represent the winner of the current round. 
+* The `result` is a 2-digit number used to transmit round info. The tens represent the current round and the ones represent the winner of the current round. 
 
-* After all 3 rounds are concluded the 'gameResult' is sent to the client to announce the conclusion. 
+* After all 3 rounds are concluded the `gameResult` is sent to the client to announce the conclusion. 
 
-* The 'gameResult' is a single digit number representing the conclusion of the entire game. 
+* The `gameResult` is a single digit number representing the conclusion of the entire game. 
